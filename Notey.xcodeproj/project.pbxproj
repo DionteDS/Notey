@@ -12,6 +12,7 @@
 		42B89E2E23340C4900F86F1C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 42B89E2C23340C4900F86F1C /* Main.storyboard */; };
 		42B89E3023340C4A00F86F1C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 42B89E2F23340C4A00F86F1C /* Assets.xcassets */; };
 		42B89E3323340C4A00F86F1C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 42B89E3123340C4A00F86F1C /* LaunchScreen.storyboard */; };
+		D221253E3431C6D144E91721 /* Pods_Notey.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6D4E4BE49BBC3D89D3714C37 /* Pods_Notey.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +23,9 @@
 		42B89E2F23340C4A00F86F1C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		42B89E3223340C4A00F86F1C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		42B89E3423340C4A00F86F1C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		66AE8F7BF83E35D177E98D99 /* Pods-Notey.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Notey.debug.xcconfig"; path = "Target Support Files/Pods-Notey/Pods-Notey.debug.xcconfig"; sourceTree = "<group>"; };
+		6D4E4BE49BBC3D89D3714C37 /* Pods_Notey.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Notey.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		8D0A743C37423F406EA545BE /* Pods-Notey.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Notey.release.xcconfig"; path = "Target Support Files/Pods-Notey/Pods-Notey.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -29,17 +33,30 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D221253E3431C6D144E91721 /* Pods_Notey.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		06FB0126A1F04F189D905292 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				66AE8F7BF83E35D177E98D99 /* Pods-Notey.debug.xcconfig */,
+				8D0A743C37423F406EA545BE /* Pods-Notey.release.xcconfig */,
+			);
+			name = Pods;
+			path = Pods;
+			sourceTree = "<group>";
+		};
 		42B89E1C23340C4900F86F1C = {
 			isa = PBXGroup;
 			children = (
 				42B89E2723340C4900F86F1C /* Notey */,
 				42B89E2623340C4900F86F1C /* Products */,
+				06FB0126A1F04F189D905292 /* Pods */,
+				48CA8DEEF9F8B52FBA6F9A75 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -64,6 +81,14 @@
 			path = Notey;
 			sourceTree = "<group>";
 		};
+		48CA8DEEF9F8B52FBA6F9A75 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				6D4E4BE49BBC3D89D3714C37 /* Pods_Notey.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -71,9 +96,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 42B89E3723340C4A00F86F1C /* Build configuration list for PBXNativeTarget "Notey" */;
 			buildPhases = (
+				4B6AC1FD746AD85E1819CBDE /* [CP] Check Pods Manifest.lock */,
 				42B89E2123340C4900F86F1C /* Sources */,
 				42B89E2223340C4900F86F1C /* Frameworks */,
 				42B89E2323340C4900F86F1C /* Resources */,
+				A388F96B1E2DA48B0B4D136F /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -129,6 +156,59 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		4B6AC1FD746AD85E1819CBDE /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Notey-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		A388F96B1E2DA48B0B4D136F /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Notey/Pods-Notey-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/ChameleonFramework/ChameleonFramework.framework",
+				"${BUILT_PRODUCTS_DIR}/Realm/Realm.framework",
+				"${BUILT_PRODUCTS_DIR}/RealmSwift/RealmSwift.framework",
+				"${BUILT_PRODUCTS_DIR}/SwipeCellKit/SwipeCellKit.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/ChameleonFramework.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Realm.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RealmSwift.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SwipeCellKit.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Notey/Pods-Notey-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		42B89E2123340C4900F86F1C /* Sources */ = {
@@ -280,6 +360,7 @@
 		};
 		42B89E3823340C4A00F86F1C /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 66AE8F7BF83E35D177E98D99 /* Pods-Notey.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -297,6 +378,7 @@
 		};
 		42B89E3923340C4A00F86F1C /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8D0A743C37423F406EA545BE /* Pods-Notey.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
