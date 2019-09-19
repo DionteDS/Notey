@@ -7,12 +7,15 @@
 //
 
 import UIKit
+import RealmSwift
 
-class ViewController: UIViewController {
+class CategoriesViewController: SwipeCellViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view.
+        
+        
+        tableView.separatorStyle = .none
     }
 
 

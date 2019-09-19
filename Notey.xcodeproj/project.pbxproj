@@ -8,21 +8,23 @@
 
 /* Begin PBXBuildFile section */
 		42B89E2923340C4900F86F1C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42B89E2823340C4900F86F1C /* AppDelegate.swift */; };
-		42B89E2B23340C4900F86F1C /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42B89E2A23340C4900F86F1C /* ViewController.swift */; };
+		42B89E2B23340C4900F86F1C /* CategoriesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42B89E2A23340C4900F86F1C /* CategoriesViewController.swift */; };
 		42B89E2E23340C4900F86F1C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 42B89E2C23340C4900F86F1C /* Main.storyboard */; };
 		42B89E3023340C4A00F86F1C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 42B89E2F23340C4A00F86F1C /* Assets.xcassets */; };
 		42B89E3323340C4A00F86F1C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 42B89E3123340C4A00F86F1C /* LaunchScreen.storyboard */; };
+		42B89E3E23340FF700F86F1C /* SwipeCellViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42B89E3D23340FF700F86F1C /* SwipeCellViewController.swift */; };
 		D221253E3431C6D144E91721 /* Pods_Notey.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6D4E4BE49BBC3D89D3714C37 /* Pods_Notey.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		42B89E2523340C4900F86F1C /* Notey.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Notey.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		42B89E2823340C4900F86F1C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		42B89E2A23340C4900F86F1C /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		42B89E2A23340C4900F86F1C /* CategoriesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoriesViewController.swift; sourceTree = "<group>"; };
 		42B89E2D23340C4900F86F1C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		42B89E2F23340C4A00F86F1C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		42B89E3223340C4A00F86F1C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		42B89E3423340C4A00F86F1C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		42B89E3D23340FF700F86F1C /* SwipeCellViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwipeCellViewController.swift; sourceTree = "<group>"; };
 		66AE8F7BF83E35D177E98D99 /* Pods-Notey.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Notey.debug.xcconfig"; path = "Target Support Files/Pods-Notey/Pods-Notey.debug.xcconfig"; sourceTree = "<group>"; };
 		6D4E4BE49BBC3D89D3714C37 /* Pods_Notey.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Notey.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		8D0A743C37423F406EA545BE /* Pods-Notey.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Notey.release.xcconfig"; path = "Target Support Files/Pods-Notey/Pods-Notey.release.xcconfig"; sourceTree = "<group>"; };
@@ -46,7 +48,6 @@
 				66AE8F7BF83E35D177E98D99 /* Pods-Notey.debug.xcconfig */,
 				8D0A743C37423F406EA545BE /* Pods-Notey.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -72,13 +73,38 @@
 			isa = PBXGroup;
 			children = (
 				42B89E2823340C4900F86F1C /* AppDelegate.swift */,
-				42B89E2A23340C4900F86F1C /* ViewController.swift */,
-				42B89E2C23340C4900F86F1C /* Main.storyboard */,
-				42B89E2F23340C4A00F86F1C /* Assets.xcassets */,
-				42B89E3123340C4A00F86F1C /* LaunchScreen.storyboard */,
+				42B89E3B23340F5100F86F1C /* Controllers */,
+				42B89E3A23340F4B00F86F1C /* Views */,
+				42B89E3C23340F5B00F86F1C /* Supporting Files */,
 				42B89E3423340C4A00F86F1C /* Info.plist */,
 			);
 			path = Notey;
+			sourceTree = "<group>";
+		};
+		42B89E3A23340F4B00F86F1C /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				42B89E2C23340C4900F86F1C /* Main.storyboard */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		42B89E3B23340F5100F86F1C /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				42B89E2A23340C4900F86F1C /* CategoriesViewController.swift */,
+				42B89E3D23340FF700F86F1C /* SwipeCellViewController.swift */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		42B89E3C23340F5B00F86F1C /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				42B89E2F23340C4A00F86F1C /* Assets.xcassets */,
+				42B89E3123340C4A00F86F1C /* LaunchScreen.storyboard */,
+			);
+			path = "Supporting Files";
 			sourceTree = "<group>";
 		};
 		48CA8DEEF9F8B52FBA6F9A75 /* Frameworks */ = {
@@ -215,7 +241,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				42B89E2B23340C4900F86F1C /* ViewController.swift in Sources */,
+				42B89E3E23340FF700F86F1C /* SwipeCellViewController.swift in Sources */,
+				42B89E2B23340C4900F86F1C /* CategoriesViewController.swift in Sources */,
 				42B89E2923340C4900F86F1C /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
