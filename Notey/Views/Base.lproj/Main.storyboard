@@ -32,7 +32,13 @@
                             <outlet property="delegate" destination="FGP-BY-MAc" id="98c-Ya-og2"/>
                         </connections>
                     </tableView>
-                    <navigationItem key="navigationItem" title="Categories" id="9m9-Qf-I2Y"/>
+                    <navigationItem key="navigationItem" title="Categories" id="9m9-Qf-I2Y">
+                        <barButtonItem key="rightBarButtonItem" systemItem="add" id="qpc-iD-lOx">
+                            <connections>
+                                <action selector="addButtonPressed:" destination="FGP-BY-MAc" id="vs2-ZE-i1B"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="lif-AM-Jcx" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>

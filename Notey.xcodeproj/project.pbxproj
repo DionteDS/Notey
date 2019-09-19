@@ -13,6 +13,8 @@
 		42B89E3023340C4A00F86F1C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 42B89E2F23340C4A00F86F1C /* Assets.xcassets */; };
 		42B89E3323340C4A00F86F1C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 42B89E3123340C4A00F86F1C /* LaunchScreen.storyboard */; };
 		42B89E3E23340FF700F86F1C /* SwipeCellViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42B89E3D23340FF700F86F1C /* SwipeCellViewController.swift */; };
+		42B89E402334122900F86F1C /* Category.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42B89E3F2334122900F86F1C /* Category.swift */; };
+		42B89E422334122F00F86F1C /* Item.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42B89E412334122F00F86F1C /* Item.swift */; };
 		D221253E3431C6D144E91721 /* Pods_Notey.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6D4E4BE49BBC3D89D3714C37 /* Pods_Notey.framework */; };
 /* End PBXBuildFile section */
 
@@ -25,6 +27,8 @@
 		42B89E3223340C4A00F86F1C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		42B89E3423340C4A00F86F1C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		42B89E3D23340FF700F86F1C /* SwipeCellViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwipeCellViewController.swift; sourceTree = "<group>"; };
+		42B89E3F2334122900F86F1C /* Category.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Category.swift; sourceTree = "<group>"; };
+		42B89E412334122F00F86F1C /* Item.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Item.swift; sourceTree = "<group>"; };
 		66AE8F7BF83E35D177E98D99 /* Pods-Notey.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Notey.debug.xcconfig"; path = "Target Support Files/Pods-Notey/Pods-Notey.debug.xcconfig"; sourceTree = "<group>"; };
 		6D4E4BE49BBC3D89D3714C37 /* Pods_Notey.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Notey.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		8D0A743C37423F406EA545BE /* Pods-Notey.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Notey.release.xcconfig"; path = "Target Support Files/Pods-Notey/Pods-Notey.release.xcconfig"; sourceTree = "<group>"; };
@@ -73,6 +77,7 @@
 			isa = PBXGroup;
 			children = (
 				42B89E2823340C4900F86F1C /* AppDelegate.swift */,
+				42B89E432334123300F86F1C /* Models */,
 				42B89E3B23340F5100F86F1C /* Controllers */,
 				42B89E3A23340F4B00F86F1C /* Views */,
 				42B89E3C23340F5B00F86F1C /* Supporting Files */,
@@ -105,6 +110,15 @@
 				42B89E3123340C4A00F86F1C /* LaunchScreen.storyboard */,
 			);
 			path = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		42B89E432334123300F86F1C /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				42B89E3F2334122900F86F1C /* Category.swift */,
+				42B89E412334122F00F86F1C /* Item.swift */,
+			);
+			path = Models;
 			sourceTree = "<group>";
 		};
 		48CA8DEEF9F8B52FBA6F9A75 /* Frameworks */ = {
@@ -241,9 +255,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				42B89E422334122F00F86F1C /* Item.swift in Sources */,
 				42B89E3E23340FF700F86F1C /* SwipeCellViewController.swift in Sources */,
 				42B89E2B23340C4900F86F1C /* CategoriesViewController.swift in Sources */,
 				42B89E2923340C4900F86F1C /* AppDelegate.swift in Sources */,
+				42B89E402334122900F86F1C /* Category.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
