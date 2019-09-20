@@ -15,6 +15,7 @@
 		42B89E3E23340FF700F86F1C /* SwipeCellViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42B89E3D23340FF700F86F1C /* SwipeCellViewController.swift */; };
 		42B89E402334122900F86F1C /* Category.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42B89E3F2334122900F86F1C /* Category.swift */; };
 		42B89E422334122F00F86F1C /* Item.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42B89E412334122F00F86F1C /* Item.swift */; };
+		42C034F82334C751009B4EC1 /* ItemViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42C034F72334C751009B4EC1 /* ItemViewController.swift */; };
 		D221253E3431C6D144E91721 /* Pods_Notey.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6D4E4BE49BBC3D89D3714C37 /* Pods_Notey.framework */; };
 /* End PBXBuildFile section */
 
@@ -29,6 +30,7 @@
 		42B89E3D23340FF700F86F1C /* SwipeCellViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwipeCellViewController.swift; sourceTree = "<group>"; };
 		42B89E3F2334122900F86F1C /* Category.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Category.swift; sourceTree = "<group>"; };
 		42B89E412334122F00F86F1C /* Item.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Item.swift; sourceTree = "<group>"; };
+		42C034F72334C751009B4EC1 /* ItemViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemViewController.swift; sourceTree = "<group>"; };
 		66AE8F7BF83E35D177E98D99 /* Pods-Notey.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Notey.debug.xcconfig"; path = "Target Support Files/Pods-Notey/Pods-Notey.debug.xcconfig"; sourceTree = "<group>"; };
 		6D4E4BE49BBC3D89D3714C37 /* Pods_Notey.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Notey.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		8D0A743C37423F406EA545BE /* Pods-Notey.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Notey.release.xcconfig"; path = "Target Support Files/Pods-Notey/Pods-Notey.release.xcconfig"; sourceTree = "<group>"; };
@@ -98,6 +100,7 @@
 			isa = PBXGroup;
 			children = (
 				42B89E2A23340C4900F86F1C /* CategoriesViewController.swift */,
+				42C034F72334C751009B4EC1 /* ItemViewController.swift */,
 				42B89E3D23340FF700F86F1C /* SwipeCellViewController.swift */,
 			);
 			path = Controllers;
@@ -260,6 +263,7 @@
 				42B89E2B23340C4900F86F1C /* CategoriesViewController.swift in Sources */,
 				42B89E2923340C4900F86F1C /* AppDelegate.swift in Sources */,
 				42B89E402334122900F86F1C /* Category.swift in Sources */,
+				42C034F82334C751009B4EC1 /* ItemViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

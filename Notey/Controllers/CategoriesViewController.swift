@@ -14,6 +14,7 @@ class CategoriesViewController: SwipeCellViewController {
     
     let realm = try! Realm()
     
+    // Variable to hold the categories in the database
     var categories : Results<Category>?
 
     override func viewDidLoad() {
@@ -47,6 +48,21 @@ class CategoriesViewController: SwipeCellViewController {
         }
         
         return cell
+    }
+    
+    //MARK: - Go to item segue
+    
+    override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        performSegue(withIdentifier: "goToItems", sender: self)
+    }
+    
+    // prepare the data to be passed.
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        let vc = segue.destination as! ItemViewController
+        
+        if let indexPath = tableView.indexPathForSelectedRow {
+            vc.selectCategory = categories?[indexPath.row]
+        }
     }
     
     //MARK: - Delete Category
